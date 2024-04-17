@@ -1,0 +1,18 @@
+/* --------------------------------------------------
+  | AUTHOR      :R.PRASANNA 		             |
+  | DATE        :17-04-2024	                     |
+  | FILE NAME   :uart_receiver	                     |
+  | DESCRIPTION :uart_receiving_data            	     |                                                 
+   -------------------------------------------------- */
+
+step_1 : enable the USART by writing the UE bit in USART_CR1 register to 1
+
+step_2 : program the M bit in USART_CR1 to define the word length
+
+step_3 : program the number of stop bits in USART_CR2
+
+step_4 : select the desired baud rate using the baud rate register USART_BRR
+
+step_5 : set the RE bit USART_CR1 this enable the receiver which beings searching for a start bit
+
+
