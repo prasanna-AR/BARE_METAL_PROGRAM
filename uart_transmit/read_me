@@ -1,0 +1,35 @@
+/* --------------------------------------------------
+  | AUTHOR      :R.PRASANNA 		             |
+  | DATE        :4-04-2024	                     |
+  | FILE NAME   :uart_transmit 	                     |
+  | DESCRIPTION :uart_transmit_data            	     |                                                 
+   -------------------------------------------------- */
+
+step_1 : set usart1 enable in APB2ENR register
+
+step_2 : select the port 
+
+step_3 : select moder of uart pin (clear)
+
+step_4 : select alternative function mode in usart pin moder
+
+step_5 : set fast speed on USART pin in ospeedr register
+
+step_6 : set alternative function bit AF7 in AFRH register
+ 
+step_7 : set wordlength in 8 bit
+
+step_8 : enable uart in USART_CR1 register
+
+step_9 : set stop bit in 2
+
+step_10: set baud rate value fraction and mantissa
+
+step_11: transmit enable in TE
+
+step_12: untile wait TXE data transfer to the shift register (USART_SR)
+
+step_13: send data to USART_DR
+
+step_14: untile wait transmission complete USART status register
+
